@@ -5,6 +5,7 @@ Here I implement the Gillespie algorithm in rcpp, and use it to demonstrate osci
 
 ## Rock-paper-scissors
 An simple way to obtain oscillations is through non-transitive interactions. A transitive interactions is one where A wins on B, B wins on C, and hence A wins on C. Rock-paper-scissors is non-transitive so the last interaction is inverted. The microscopic kinetics are A + B ⟶ 2B, B + C ⟶ 2C, C + A ⟶ 2A. Note that reaction rates are not shown in all of the examples provided. The dynamics is somewhat disappointing (in my opinion) becuase unstable. 
+![rps](https://github.com/MarcoFele98/rcpp_stochastic_dynamics/assets/122376407/feea6149-94b8-428d-a927-61e9e2276613)
 
 ## Lotka-volterra predator-prey
 The microscopic kinetics are prey (X) clonal reproduction X ⟶ 2X, prey death by predator (Y) X + Y ⟶ Y, predator reproduction by eating prey X + Y ⟶ 2Y, and predator death Y ⟶ $\varnothing$. The oscillations are neutrally stable, meaning the system has infinte attraction cycles instead of just one. This is caused by eigenvalues hanging out at the boundary between stablity and instability. I think that this means that in a stochastic system the oscillation cycle will randomly drift, increasing the probability that predators or preys will eventually go extinct.
