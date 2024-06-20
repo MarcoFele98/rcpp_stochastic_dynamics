@@ -7,4 +7,4 @@ Here I implement the Gillespie algorithm in rcpp, and use it to demonstrate osci
 An simple way to obtain oscillations is through non-transitive interactions. A transitive interactions is one where A wins on B, B wins on C, and hence A wins on C. Rock-paper-scissors is non-transitive and the last interaction is inverted. The microscopic kinetics are A + B ⟶ 2B, B + C ⟶ 2C, C + A ⟶ 2A. The dynamics is somewhat disappointing (in my opinion) becuase unstable. 
 
 ## Lotka-volterra predator-prey
-The microscopic kinetics are X ⟶ 2X, X + Y ⟶ Y, X + Y ⟶ 2Y, Y ⟶ $$\varnothing$$
+The microscopic kinetics are X ⟶ 2X, X + Y ⟶ Y, X + Y ⟶ 2Y, Y ⟶ $\varnothing$
