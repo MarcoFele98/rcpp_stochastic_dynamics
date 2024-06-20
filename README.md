@@ -12,7 +12,7 @@ The microscopic reactions are prey clonal reproduction X ⟶ 2X, prey death by p
 ![predator_prey](https://github.com/MarcoFele98/rcpp_stochastic_dynamics/assets/122376407/921df9de-b5a4-4315-bb02-e787eeddfa8a)
 
 ## Second order interactions collective decision-making model
-Assume that a population of individuals has to choose between two available options. The first microscopic reaction is that two individuals that prefer X convert one that prefers Y (could be seen as the power of a social majority) 2X + Y ⟶ 3X. The order of this reaction is two, since the stoichiometry of the highest number of reagents involved is two. It is the order of this reaction that gives rise to mulitstability. Another reaction is that X spontaneusly switches opionion X ⟶ Y. The full set of reactions includes ones were X and Y are inverted (symmetric reactions). The population reaches consenus, where everyone either prefers option X or option Y. 
+Assume that a population of individuals has to choose between two available options. The first microscopic reaction is that two individuals that prefer X convert one that prefers Y (could be seen as social conformity) 2X + Y ⟶ 3X. The order of this reaction is two, since the stoichiometry of the highest number of reagents involved is two. It is the order of this reaction that gives rise to mulitstability. Another reaction is that X spontaneusly switches opionion X ⟶ Y. The full set of reactions includes ones were X and Y are inverted (symmetric reactions). The population reaches consenus, where everyone either prefers option X or option Y. 
 ![voter](https://github.com/MarcoFele98/rcpp_stochastic_dynamics/assets/122376407/b97c34e7-cbc9-4a34-beca-623971c46017)
 
 ## Cross-inhibition collective decision-making model
