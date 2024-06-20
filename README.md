@@ -8,7 +8,7 @@ An simple way to obtain oscillations is through non-transitive interactions. A t
 ![rps](https://github.com/MarcoFele98/rcpp_stochastic_dynamics/assets/122376407/eeb13548-6d58-40bc-be4b-0a61f5d6e90b)
 
 ## Lotka-volterra predator-prey
-The microscopic reactions are prey (X) clonal reproduction X ⟶ 2X, prey death by predator (Y) X + Y ⟶ Y, predator reproduction by eating prey X + Y ⟶ 2Y, and predator death Y ⟶ $\varnothing$. The oscillations are neutrally stable, meaning the system has infinte attraction cycles instead of just one. This is caused by eigenvalues hanging out at the boundary between stability and instability. I think that this means that in a stochastic system the oscillation cycle will randomly drift, increasing the probability that predators or preys will eventually go extinct.
+The microscopic reactions are prey (X) clonal reproduction X ⟶ 2X, prey death by predator (Y) X + Y ⟶ Y, predator reproduction by eating prey X + Y ⟶ 2Y, and predator death Y ⟶ $\varnothing$. The oscillations are neutrally stable, meaning the system has infinte attraction cycles instead of just one. This is caused by eigenvalues hanging out at the boundary between stability and instability. I think that this means that in a stochastic system the oscillation cycle will randomly drift in magnitude, increasing the probability that predators or preys will eventually go extinct.
 ![predator_prey](https://github.com/MarcoFele98/rcpp_stochastic_dynamics/assets/122376407/921df9de-b5a4-4315-bb02-e787eeddfa8a)
 
 ## Second order interactions collective decision-making model
