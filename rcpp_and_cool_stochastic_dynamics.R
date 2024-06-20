@@ -1,7 +1,6 @@
 library(Rcpp)
 library(ggplot2)
 library(data.table)
-library(mosaic) # for findZeros
 
 sourceCpp("noise/rcpp_stochastic_dynamics/gillespie_algorithm.cpp")
 
@@ -185,7 +184,7 @@ ggplot(bifurcation_anlaysis_s) +
   geom_hline(aes(yintercept = 0), linewidth = 2, lty = "dashed") +
   scale_fill_viridis_c(option = "plasma") +
   #ggtitle("Bifurcation diagram") +
-  ylab("Consensus (from 200 prefering Y to 200 prefering X)") +
+  ylab("Preferences (from 200 prefering Y to 200 prefering X)") +
   xlab("Switch rate")
 
 ggsave("noise/rcpp_stochastic_dynamics/figures/biff.png",
@@ -206,13 +205,6 @@ x_isocline <- data.table(x = seq(0, 2.5, l = 1000),
                          y = a * seq(0, 2.5, l = 1000))
 y_isocline <- data.table(x = seq(0, 2.5, l = 1000),
                          y = seq(0, 2.5, l = 1000)^2 / ((seq(0, 2.5, l = 1000)^2 + 1)*b))
-
-x_equilibria <- findZeros(x^2 / (1 + x^2) - b * a * x ~ x)
-y_equilibria <- apply(x_equilibria, 1, FUN = function(x_value) {
-  #browser()
-  findZeros(-a * x_equilibrium + x ~ x, # notice that x actually stands for y here, but findZeros() needs the variable for which to solve to be called x
-            x_equilibrium = x_value) 
-  })
 
 id <- 1
 gene_switch_data <- data.table()
