@@ -4,7 +4,7 @@ R is very slow and C++ is very fast. Despite the speed gains, a cumbersone aspec
 Here I implement a general version of the Gillespie algorithm in rcpp, and use it to demonstrate oscillations and multistability. The reason I did this is to force me to think about the microscopic reactions needed to obtain interesting dyamical outcomes. I still do not know whether it possible to design micro-level interactions starting from macro-level dynamical desiderata. I implement the Gillespie algorithm to simulate five classic models from theoretical ecology, collective decision-making, and systems biology.
 
 ## Rock-paper-scissors
-An simple way to obtain oscillations is through non-transitive interactions. A transitive interactions is one where A wins on B, B wins on C, and hence A wins on C. Rock-paper-scissors is non-transitive so the last interaction is inverted. The microscopic reactions are A + B ⟶ 2B, B + C ⟶ 2C, C + A ⟶ 2A. Note that reaction rates are not shown in all of the examples provided. The dynamics is somewhat disappointing (in my opinion) becuase unstable. 
+An simple way to obtain oscillations is through non-transitive interactions. A transitive interactions is one where A wins on B, B wins on C, and hence A wins on C. Rock-paper-scissors is non-transitive so the last interaction is inverted. The microscopic reactions are A + B ⟶ 2B, B + C ⟶ 2C, C + A ⟶ 2A. Note that reaction rates are not shown in all of the examples provided. The dynamics is unstable. 
 ![rps](https://github.com/MarcoFele98/rcpp_stochastic_dynamics/assets/122376407/eeb13548-6d58-40bc-be4b-0a61f5d6e90b)
 
 ## Lotka-volterra predator-prey
